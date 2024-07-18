@@ -35,6 +35,23 @@ To run *Locale* (from scratch) on streaming GP with a specific setting of N & in
 python Locale_stream.py --N 100000 --ind 1
 ~~~
 
-Due to the space limit of github, we could only provide some of the test datasets in this anonymous repository. We will provide our pre-training data later if accepted.
+To run PR-GPT on static GP w/ a specific setting of N using a pre-trained model after eph-th epochs:
+~~~
+python PRGPT_static.py --N 10000 --eph 4
+python PRGPT_static.py --N 50000 --eph 4
+python PRGPT_static.py --N 100000 --eph 4
+python PRGPT_static.py --N 500000 --eph 5
+python PRGPT_static.py --N 1000000 --eph 8
+~~~
+To run PR-GPT on streaming GP w/ a specific setting of N & ind-th graph (ind=[1,2,3,4,5]) using a pre-trained model after eph-th epochs:
+~~~
+python PRGPT_stream.py --N 100000 --eph 4 --ind 1
+~~~
 
-Please note that different environment setups (e.g., CPU, GPU, memory size, versions of libraries and packages, etc.) may result in different evaluation results regarding the inference time.
+To pre-train PR-GPT from scratch w/ 
+~~~
+python PRGPT_ptn.py 
+~~~
+Due to the space limit of GitHub, we could only provide some of our data in this anonymous repository. We will provide our pre-training data later (e.g. via OneDrive) if accepted.
+
+Please note that different environment setups (e.g., CPU, GPU, memory size, versions of libraries and packages, etc.) may result in different evaluation results regarding the inference time. When testing the inference time, please make sure that there are no other processes with heavy resource requirements (e.g., GPUs and memory) running on the same server. Otherwise, the evaluated inference time may not be stable.

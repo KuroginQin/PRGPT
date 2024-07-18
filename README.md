@@ -35,5 +35,6 @@ To run *Locale* (from scratch) on streaming GP with a specific setting of N & in
 python Locale_stream.py --N 100000 --ind 1
 ~~~
 
+Due to the space limit of github, we could only provide some of the test datasets in this anonymous repository. We will provide our pre-training data later if accepted.
 
 Please note that different environment setups (e.g., CPU, GPU, memory size, versions of libraries and packages, etc.) may result in different evaluation results regarding the inference time.

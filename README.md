@@ -9,6 +9,31 @@ If you find this project useful for your research, please cite the following pap
 TBD
 
 ### Requirements
-* Numpy
-* Scipy
-* PyTorch
+* numpy
+* scipy
+* pytorch
+* infomap
+* sdp-clustering
+
+### Usage
+
+To run *InfoMap* (from scratch) on static GP with a specific setting of N:
+~~~
+python InfoMap_static.py --N 100000
+~~~
+To run *InfoMap* (from scratch) on streaming GP with a specific setting of N & ind-th graph (ind=[1,2,3,4,5])
+~~~
+python InfoMap_stream.py --N 100000 --ind 1
+~~~
+
+To run *Locale* (from scratch) on static GP with a specific setting of N:
+~~~
+python Locale_static.py --N 100000
+~~~
+To run *Locale* (from scratch) on streaming GP with a specific setting of N & ind-th graph (ind=[1,2,3,4,5])
+~~~
+python Locale_stream.py --N 100000 --ind 1
+~~~
+
+
+Please note that different environment setups (e.g., CPU, GPU, memory size, versions of libraries and packages, etc.) may result in different evaluation results regarding the inference time.

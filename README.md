@@ -14,6 +14,7 @@ TBD
 * pytorch
 * infomap
 * sdp-clustering
+* graph-tool
 
 ### Usage
 
@@ -54,5 +55,10 @@ python PRGPT_ptn.py
 ~~~
 After the offline pre-training, please copy the saved model parameters (e.g., in ./chpt_new) to ./chpt.
 Due to the space limit of GitHub, we could only provide some of our data in this anonymous repository. We will provide our pre-training data later (e.g. via OneDrive) if accepted.
+
+To generate new pre-training data (i.e., small synthetic graphs):
+~~~
+python ptn_data_gen.py
+~~~
 
 Please note that different environment setups (e.g., CPU, GPU, memory size, versions of libraries and packages, etc.) may result in different evaluation results regarding the inference time. When testing the inference time, please also make sure that there are no other processes with heavy resource requirements (e.g., GPUs and memory) running on the same server. Otherwise, the evaluated inference time may not be stable.

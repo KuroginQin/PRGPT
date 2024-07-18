@@ -48,10 +48,11 @@ To run PR-GPT on streaming GP w/ a specific setting of N & ind-th graph (ind=[1,
 python PRGPT_stream.py --N 100000 --eph 4 --ind 1
 ~~~
 
-To pre-train PR-GPT from scratch w/ 
+To conduct the offline pre-training of PR-GPT using default model parameters & layer configurations:
 ~~~
-python PRGPT_ptn.py 
+python PRGPT_ptn.py
 ~~~
+After the offline pre-training, please copy the saved model parameters (e.g., in ./chpt_new) to ./chpt.
 Due to the space limit of GitHub, we could only provide some of our data in this anonymous repository. We will provide our pre-training data later (e.g. via OneDrive) if accepted.
 
-Please note that different environment setups (e.g., CPU, GPU, memory size, versions of libraries and packages, etc.) may result in different evaluation results regarding the inference time. When testing the inference time, please make sure that there are no other processes with heavy resource requirements (e.g., GPUs and memory) running on the same server. Otherwise, the evaluated inference time may not be stable.
+Please note that different environment setups (e.g., CPU, GPU, memory size, versions of libraries and packages, etc.) may result in different evaluation results regarding the inference time. When testing the inference time, please also make sure that there are no other processes with heavy resource requirements (e.g., GPUs and memory) running on the same server. Otherwise, the evaluated inference time may not be stable.

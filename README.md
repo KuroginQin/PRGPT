@@ -10,6 +10,8 @@ If you find this project useful for your research, please cite the following pap
 
 TBD
 
+If you have any questions regarding this repository, you can contact the author via [mengqin_az@foxmail.com].
+
 ### Requirements
 * numpy
 * scipy
@@ -51,12 +53,11 @@ To run PR-GPT on streaming GP w/ a specific setting of N & ind-th graph (ind=[1,
 python PRGPT_stream.py --N 100000 --eph 4 --ind 1
 ~~~
 
-To conduct the offline pre-training of PR-GPT using default model parameters & layer configurations:
+To conduct the offline pre-training of PR-GPT, download our [generated (synthetic) pre-training data](https://hkustconnect-my.sharepoint.com/:u:/g/personal/mqinae_connect_ust_hk/EU29ZyTZA6VChRakolwFHvoBO7qdjTHJFatl0056p8-bbA?e=CUAMD7), unzip the file, and put the derived files in ./data. Then:
 ~~~
 python PRGPT_ptn.py
 ~~~
 After the offline pre-training, please copy the saved model parameters (e.g., in ./chpt_new) to ./chpt.
-Due to the space limit of GitHub, we could only provide some of our data in this anonymous repository. We will provide our pre-training data later (e.g. via OneDrive) if accepted.
 
 To generate new pre-training data (i.e., small synthetic graphs):
 ~~~

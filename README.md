@@ -8,7 +8,14 @@ Graph partitioning (GP) is a classic problem that divides the node set of a grap
 ### Citing
 If you find this project useful for your research, please cite the following paper.
 
-TBD
+```
+@article{qin2024towards,
+  title={Towards Faster Graph Partitioning via Pre-training and Inductive Inference},
+  author={Qin, Meng and Zhang, Chaorui and Gao, Yu and Ding, Yibin and Jiang, Weipeng and Zhang, Weixi and Han, Wei and Bai, Bo},
+  journal={arXiv preprint arXiv:2409.00670},
+  year={2024}
+}
+```
 
 If you have any questions regarding this repository, you can contact the author via [mengqin_az@foxmail.com].
 

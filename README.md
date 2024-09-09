@@ -16,6 +16,15 @@ If you find this project useful for your research, please cite the following pap
   year={2024}
 }
 ```
+```
+@inproceedings{qin2024pre,
+  title={Pre-train and refine: Towards higher efficiency in k-agnostic community detection without quality degradation},
+  author={Qin, Meng and Zhang, Chaorui and Gao, Yu and Zhang, Weixi and Yeung, Dit-Yan},
+  booktitle={Proceedings of the 30th ACM SIGKDD Conference on Knowledge Discovery and Data Mining},
+  pages={2467--2478},
+  year={2024}
+}
+```
 
 If you have any questions regarding this repository, you can contact the author via [mengqin_az@foxmail.com].
 
